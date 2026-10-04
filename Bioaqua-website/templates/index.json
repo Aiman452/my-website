@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "badge": "Clinical Grade Formula",
+        "title": "Elevate Your Gaze with Scientific Precision.",
+        "description": "Nourish, strengthen, and lengthen your lashes with our dermatologically-tested serum. Results visible in just 14 days.",
+        "btn_text": "Experience the Growth"
+      }
+    },
+    "precision": {
+      "type": "micro-precision",
+      "settings": {
+        "title": "Micro-Precision Application",
+        "description": "The BIOAQUA applicator features a 0.1mm micro-fine brush head, engineered for surgical precision at the lash root. Unlike generic felt tips, our synthetic fibers ensure zero-waste delivery of active nutrients directly to the hair follicles."
+      }
+    },
+    "science": {
+      "type": "science-growth",
+      "settings": {
+        "badge": "The Bio-Active Formula",
+        "title": "The Molecular Science of Growth.",
+        "description": "Our proprietary Nourishing Liquid utilizes a triple-peptide complex that accelerates the anagen phase of the hair growth cycle. Infused with botanical nutrients and pharmaceutical-grade biotin, it creates a protective barrier while stimulating dormant follicles for 3x more density.",
+        "stat1_val": "98%",
+        "stat1_label": "Reported Length",
+        "stat2_val": "14 Days",
+        "stat2_label": "Visible Results"
+      }
+    },
+    "comparison": {
+      "type": "comparison-table",
+      "settings": {
+        "badge": "Why BIOAQUA Wins",
+        "title": "Clinical Benchmark Comparison"
+      }
+    },
+    "reviews": {
+      "type": "clinical-reviews",
+      "settings": {
+        "badge": "Real Patients. Real Growth.",
+        "title": "Verified Clinical Experiences",
+        "quote": "I've tried every serum on the market, but nothing compares to the precision of the BIOAQUA brush. My lashes feel stronger and noticeably darker within two weeks.",
+        "author": "— Dr. Elena Sterling, Dermatologist"
+      }
+    },
+    "packaging": {
+      "type": "packaging-banner",
+      "settings": {
+        "title": "Uncompromising Quality.",
+        "description": "Our signature purple packaging isn't just about style—it's a seal of authenticity and pharmaceutical-grade safety.",
+        "btn_text": "Claim Your Supply"
+      }
+    },
+    "stock": {
+      "type": "stock-urgency",
+      "settings": {
+        "remaining_stock": 14,
+        "sold_percent": "92%"
+      }
+    },
+    "benefits": {
+      "type": "benefit-badges",
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq-1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How often should I apply the serum?",
+            "answer": "For optimal results, apply the serum once daily, preferably in the evening after removing all eye makeup. A single stroke at the base of the upper lashes is sufficient."
+          }
+        },
+        "faq-2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it safe for contact lens wearers?",
+            "answer": "Yes, our formula is ophthalmologist-tested and non-irritating. However, we recommend removing contact lenses before application and waiting 15 minutes before re-inserting them."
+          }
+        },
+        "faq-3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What happens if I stop using it?",
+            "answer": "If you stop use, your lashes will eventually return to their natural growth cycle and previous appearance over the course of several weeks to months."
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-2",
+        "faq-3"
+      ],
+      "settings": {
+        "badge": "Have Questions?",
+        "title": "Frequently Asked Questions"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "precision",
+    "science",
+    "comparison",
+    "reviews",
+    "packaging",
+    "stock",
+    "benefits",
+    "faq"
+  ]
+}

@@ -1,0 +1,62 @@
+<section id="shop" class="relative h-[85vh] w-full overflow-hidden" style="height: 85vh;">
+  <div class="flex transition-transform duration-1000 ease-in-out h-full" id="hero-slider">
+    <!-- Slide 1 -->
+    <div class="min-w-full h-full relative" style="position: relative; width: 100%; height: 100%;">
+      <img class="absolute inset-0 w-full h-full object-cover" 
+           style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover;"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZN_Jip3VplcYeacH4nwqRZo05hT6BJC0-NWoY4UfAshg_kEnDkmxoPvBAm5Op8P74AtWvK7tZGSxDdoM2xx8O9_giPYA5HkikdyOF8HswC08PZ5kt4gkM4kQUsVN5z2sSSbliSBplTtI_r9fbzHtLHSCuoeVDS72QGFkztCHBLIlWjuczajhV4kCnEO3ZIASapUmJ9JNbxm4hf5pD5dC5J__CEQglDYn2f15l6QoGDOK9iy6xn5KqRfVUxzL_fhlvDzGmTa9sMH4" 
+           alt="{{ section.settings.title | default: 'BIOAQUA Nourishing Liquid Eyelashes' }}" />
+      <div class="absolute inset-0 bg-gradient-to-r from-white/80 to-transparent flex items-center px-margin-desktop">
+        <div class="max-w-2xl">
+          <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block font-semibold">
+            {{ section.settings.badge | default: 'Clinical Grade Formula' }}
+          </span>
+          <h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-tight">
+            {{ section.settings.title | default: 'Elevate Your Gaze with Scientific Precision.' }}
+          </h1>
+          <p class="font-body-lg text-body-lg text-secondary mb-8">
+            {{ section.settings.description | default: 'Nourish, strengthen, and lengthen your lashes with our dermatologically-tested serum. Results visible in just 14 days.' }}
+          </p>
+          <button onclick="handleAddToCartClick(this)" class="bg-primary-container text-on-primary px-12 py-4 font-button text-button uppercase tracking-wider hover:bg-primary transition-colors cursor-pointer border-0">
+            {{ section.settings.btn_text | default: 'Experience the Growth' }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Silver Section Divider -->
+<div class="silver-divider max-w-container-max mx-auto my-0"></div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge Text",
+      "default": "Clinical Grade Formula"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Headline",
+      "default": "Elevate Your Gaze with Scientific Precision."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description Copy",
+      "default": "Nourish, strengthen, and lengthen your lashes with our dermatologically-tested serum. Results visible in just 14 days."
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Label",
+      "default": "Experience the Growth"
+    }
+  ]
+}
+{% endschema %}

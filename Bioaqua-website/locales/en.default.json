@@ -1,0 +1,23 @@
+{
+  "general": {
+    "page_title": "BIOAQUA | Clinical Precision Lash Care",
+    "share": "Share",
+    "back_to_home": "Back to Home"
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Buy Now",
+      "sold_out": "Sold Out",
+      "unavailable": "Unavailable",
+      "vendor": "BIOAQUA Clinical",
+      "quantity": "Quantity"
+    }
+  },
+  "cart": {
+    "title": "Your Order Summary",
+    "empty": "Your cart is currently empty.",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Shopify Checkout",
+    "shipping_note": "Free Clinical Shipping Applied"
+  }
+}

@@ -1,0 +1,36 @@
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-secondary-container">
+  <nav class="flex justify-between items-center px-margin-desktop py-stack-md max-w-container-max mx-auto h-20">
+    <div class="font-display-lg text-display-lg-mobile tracking-tighter text-primary">
+      {{ section.settings.brand_title | default: 'BIOAQUA' }}
+    </div>
+    <div class="hidden md:flex items-center gap-10">
+      <a class="font-button text-button uppercase text-primary border-b-2 border-primary pb-1" href="#shop">Shop</a>
+      <a class="font-button text-button uppercase text-secondary hover:text-primary transition-colors" href="#benefits">Benefits</a>
+      <a class="font-button text-button uppercase text-secondary hover:text-primary transition-colors" href="#reviews">Reviews</a>
+      <a class="font-button text-button uppercase text-secondary hover:text-primary transition-colors" href="#faq">FAQ</a>
+    </div>
+    <button onclick="handleAddToCartClick(this)" class="bg-primary-container text-on-primary px-8 py-3 font-button text-button uppercase cursor-pointer active:opacity-70 transition-all">
+      {{ section.settings.cta_text | default: 'Buy Now' }}
+    </button>
+  </nav>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_title",
+      "label": "Brand Name",
+      "default": "BIOAQUA"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Label",
+      "default": "Buy Now"
+    }
+  ]
+}
+{% endschema %}

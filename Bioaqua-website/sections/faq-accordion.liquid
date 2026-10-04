@@ -1,0 +1,56 @@
+<!-- 11. FAQ Accordion -->
+<section id="faq" class="py-stack-lg bg-surface-container-low" style="background-color: var(--surface-container-low);">
+  <div class="max-w-2xl mx-auto px-margin-mobile">
+    <h2 class="font-headline-md text-headline-md text-center mb-12">
+      {{ section.settings.title | default: 'Frequently Asked Questions' }}
+    </h2>
+    <div class="space-y-4">
+      <details class="group bg-surface-container-lowest border border-secondary-container" open style="border: 1px solid var(--secondary-container); background: #ffffff;">
+        <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-button text-button uppercase" style="cursor: pointer; padding: 24px;">
+          How often should I apply the serum?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-secondary-container" style="padding: 24px; padding-top: 0; border-top: 1px solid var(--secondary-container); color: var(--secondary);">
+          For optimal results, apply the serum once daily, preferably in the evening after removing all eye makeup. A single stroke at the base of the upper lashes is sufficient.
+        </div>
+      </details>
+      <details class="group bg-surface-container-lowest border border-secondary-container" style="border: 1px solid var(--secondary-container); background: #ffffff;">
+        <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-button text-button uppercase" style="cursor: pointer; padding: 24px;">
+          Is it safe for contact lens wearers?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-secondary-container" style="padding: 24px; padding-top: 0; border-top: 1px solid var(--secondary-container); color: var(--secondary);">
+          Yes, our formula is ophthalmologist-tested and non-irritating. However, we recommend removing contact lenses before application and waiting 15 minutes before re-inserting them.
+        </div>
+      </details>
+      <details class="group bg-surface-container-lowest border border-secondary-container" style="border: 1px solid var(--secondary-container); background: #ffffff;">
+        <summary class="flex justify-between items-center p-6 cursor-pointer list-none font-button text-button uppercase" style="cursor: pointer; padding: 24px;">
+          What happens if I stop using it?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+        </summary>
+        <div class="p-6 pt-0 font-body-md text-body-md text-secondary border-t border-secondary-container" style="padding: 24px; padding-top: 0; border-top: 1px solid var(--secondary-container); color: var(--secondary);">
+          If you stop use, your lashes will eventually return to their natural growth cycle and previous appearance over the course of several weeks to months.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ Accordion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Accordion"
+    }
+  ]
+}
+{% endschema %}

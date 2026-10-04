@@ -1,0 +1,186 @@
+<section class="py-12 md:py-16 px-6 sm:px-12 md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+    
+    <!-- Product Media Gallery -->
+    <div class="space-y-4">
+      <div class="aspect-square relative rounded-lg overflow-hidden bg-surface-container-high border border-secondary-container shadow-sm">
+        <img id="main-product-image" 
+             src="{{ product.featured_image | default: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBZN_Jip3VplcYeacH4nwqRZo05hT6BJC0-NWoY4UfAshg_kEnDkmxoPvBAm5Op8P74AtWvK7tZGSxDdoM2xx8O9_giPYA5HkikdyOF8HswC08PZ5kt4gkM4kQUsVN5z2sSSbliSBplTtI_r9fbzHtLHSCuoeVDS72QGFkztCHBLIlWjuczajhV4kCnEO3ZIASapUmJ9JNbxm4hf5pD5dC5J__CEQglDYn2f15l6QoGDOK9iy6xn5KqRfVUxzL_fhlvDzGmTa9sMH4' }}" 
+             alt="{{ product.title | default: 'BIOAQUA Nourishing Liquid Eyelashes' }}" 
+             class="w-full h-full object-cover" />
+        <span class="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded uppercase tracking-wider">
+          Clinical Grade
+        </span>
+      </div>
+      
+      <!-- Thumbnail Gallery -->
+      <div class="grid grid-cols-4 gap-3">
+        <button type="button" class="aspect-square rounded border-2 border-primary overflow-hidden opacity-100 hover:opacity-100 transition-opacity" onclick="document.getElementById('main-product-image').src='https://lh3.googleusercontent.com/aida-public/AB6AXuBZN_Jip3VplcYeacH4nwqRZo05hT6BJC0-NWoY4UfAshg_kEnDkmxoPvBAm5Op8P74AtWvK7tZGSxDdoM2xx8O9_giPYA5HkikdyOF8HswC08PZ5kt4gkM4kQUsVN5z2sSSbliSBplTtI_r9fbzHtLHSCuoeVDS72QGFkztCHBLIlWjuczajhV4kCnEO3ZIASapUmJ9JNbxm4hf5pD5dC5J__CEQglDYn2f15l6QoGDOK9iy6xn5KqRfVUxzL_fhlvDzGmTa9sMH4'">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZN_Jip3VplcYeacH4nwqRZo05hT6BJC0-NWoY4UfAshg_kEnDkmxoPvBAm5Op8P74AtWvK7tZGSxDdoM2xx8O9_giPYA5HkikdyOF8HswC08PZ5kt4gkM4kQUsVN5z2sSSbliSBplTtI_r9fbzHtLHSCuoeVDS72QGFkztCHBLIlWjuczajhV4kCnEO3ZIASapUmJ9JNbxm4hf5pD5dC5J__CEQglDYn2f15l6QoGDOK9iy6xn5KqRfVUxzL_fhlvDzGmTa9sMH4" class="w-full h-full object-cover" alt="Serum bottle" />
+        </button>
+        <button type="button" class="aspect-square rounded border border-secondary-container overflow-hidden opacity-75 hover:opacity-100 transition-opacity" onclick="document.getElementById('main-product-image').src='https://lh3.googleusercontent.com/aida-public/AB6AXuC3yVHj0ORWA877TsVEWDjsEagDcFenTXgAscQfw-jeUaKKHIdTHaigAx39pNzRr7Btu06VOBc9Be5BVpPAeqAmRf37QkWwFLRDwbYLdLXxJlx1hbf4V-N1sKqnF-caKA4iZAHicOkfvyJ0CTx-MagQZ8oD97Rzplyo9wMjfdIIyxBB1lJE1UbC2pfNxZJc_IszrXqtBkMDUPoU-0jkcjZAlrOkpsajoLQRmFRKZ2ceFGsQ2RvntdgH7ntv-tJQsDsgPdanrrxcchE'">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3yVHj0ORWA877TsVEWDjsEagDcFenTXgAscQfw-jeUaKKHIdTHaigAx39pNzRr7Btu06VOBc9Be5BVpPAeqAmRf37QkWwFLRDwbYLdLXxJlx1hbf4V-N1sKqnF-caKA4iZAHicOkfvyJ0CTx-MagQZ8oD97Rzplyo9wMjfdIIyxBB1lJE1UbC2pfNxZJc_IszrXqtBkMDUPoU-0jkcjZAlrOkpsajoLQRmFRKZ2ceFGsQ2RvntdgH7ntv-tJQsDsgPdanrrxcchE" class="w-full h-full object-cover" alt="Brush precision" />
+        </button>
+        <button type="button" class="aspect-square rounded border border-secondary-container overflow-hidden opacity-75 hover:opacity-100 transition-opacity" onclick="document.getElementById('main-product-image').src='https://lh3.googleusercontent.com/aida-public/AB6AXuBxdyTRHL0rX3ShLuNXT6Tkr0U19C4TazNtthYd0vDLfiO0JkXQqsJ2fugnBU7lE2eQKcQ608ivghSd9DN4EsyRGnRidG7FgVm-u3Y3dYzb0iLSLX1LspqSPF4_v5RgcH0V5DF5fgFQUzz7L8HwgNvQ1D4hN5H7or7BWgfN4InYSJdG9fj9NtLPyhBMzPvDFP7EI3pnfyXzhnGYyHzwsDTmIxkJ5_8tswpJdlFCkgOJNVq6WdpKeb2VOJ2SleMB7N9WTVeuS8VQtUY'">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxdyTRHL0rX3ShLuNXT6Tkr0U19C4TazNtthYd0vDLfiO0JkXQqsJ2fugnBU7lE2eQKcQ608ivghSd9DN4EsyRGnRidG7FgVm-u3Y3dYzb0iLSLX1LspqSPF4_v5RgcH0V5DF5fgFQUzz7L8HwgNvQ1D4hN5H7or7BWgfN4InYSJdG9fj9NtLPyhBMzPvDFP7EI3pnfyXzhnGYyHzwsDTmIxkJ5_8tswpJdlFCkgOJNVq6WdpKeb2VOJ2SleMB7N9WTVeuS8VQtUY" class="w-full h-full object-cover" alt="Packaging" />
+        </button>
+        <button type="button" class="aspect-square rounded border border-secondary-container overflow-hidden opacity-75 hover:opacity-100 transition-opacity" onclick="document.getElementById('main-product-image').src='https://lh3.googleusercontent.com/aida-public/AB6AXuC0NAqTdQtDZv8kmAzijEzOj6y9llUmhDRpCzcLeKEuH7etXxjBxiifeYQMIKEirSZCw0WD1C9ocuv448OIVjNJNl3UHEOYDsmWLEYawZr6jFc6-DaYKyzbr0fk9_E4ANqll26oTLF2IDS8_Ipzb92i-Gr_oHDn0EGHzCIShv2sA_TNWdyxXzW-tUo7kvpZvcirQ-7H0NVcAtZ8dj_wXmezcLPLYZHIAM-ggIUyueIIzTVFgpVXmPNxGQgG6C5rir14PcOKWz1x6Tc'">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0NAqTdQtDZv8kmAzijEzOj6y9llUmhDRpCzcLeKEuH7etXxjBxiifeYQMIKEirSZCw0WD1C9ocuv448OIVjNJNl3UHEOYDsmWLEYawZr6jFc6-DaYKyzbr0fk9_E4ANqll26oTLF2IDS8_Ipzb92i-Gr_oHDn0EGHzCIShv2sA_TNWdyxXzW-tUo7kvpZvcirQ-7H0NVcAtZ8dj_wXmezcLPLYZHIAM-ggIUyueIIzTVFgpVXmPNxGQgG6C5rir14PcOKWz1x6Tc" class="w-full h-full object-cover" alt="Clinical results" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Product Purchasing Details -->
+    <div class="space-y-6">
+      <!-- Rating & Badges -->
+      <div class="flex items-center gap-3">
+        <div class="flex text-primary">
+          <span class="material-symbols-outlined fill text-lg">star</span>
+          <span class="material-symbols-outlined fill text-lg">star</span>
+          <span class="material-symbols-outlined fill text-lg">star</span>
+          <span class="material-symbols-outlined fill text-lg">star</span>
+          <span class="material-symbols-outlined fill text-lg">star</span>
+        </div>
+        <span class="text-sm font-semibold text-on-surface">4.9 / 5.0</span>
+        <span class="text-sm text-secondary">(1,482 Verified Clinical Reviews)</span>
+      </div>
+
+      <!-- Title & Price -->
+      <div>
+        <h1 class="font-display-lg text-2xl sm:text-3xl md:text-4xl text-on-surface font-bold tracking-tight">
+          {{ product.title | default: 'BIOAQUA Nourishing Liquid Eyelashes' }}
+        </h1>
+        <p class="font-body-md text-secondary mt-2">
+          Clinical Triple-Peptide Formula with 0.1mm Micro-Precision Applicator. Rapid visible density in 14 days.
+        </p>
+      </div>
+
+      <!-- Price Box -->
+      <div class="flex items-baseline gap-4 pb-4 border-b border-secondary-container">
+        <span class="font-display-lg text-3xl font-extrabold text-primary">
+          {{ product.price | default: 2400 | money }}
+        </span>
+        <span class="text-lg text-secondary line-through">
+          {{ product.compare_at_price | default: 3800 | money }}
+        </span>
+        <span class="bg-error-container text-on-error-container text-xs font-bold px-2 py-1 rounded">
+          Save 37%
+        </span>
+      </div>
+
+      <!-- Bundle Variant Selector -->
+      <div>
+        <label class="block font-button text-xs uppercase tracking-wider text-secondary mb-3 font-semibold">
+          Select Supply Package:
+        </label>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <label class="border-2 border-primary bg-primary-fixed/20 p-4 rounded cursor-pointer relative flex flex-col justify-between">
+            <input type="radio" name="bundle_tier" value="1" checked class="sr-only" />
+            <div>
+              <span class="block font-bold text-sm text-on-surface">1 Bottle</span>
+              <span class="block text-xs text-secondary">30-Day Starter</span>
+            </div>
+            <div class="mt-2 font-bold text-primary text-base">$24.00</div>
+          </label>
+          <label class="border border-secondary-container hover:border-primary p-4 rounded cursor-pointer relative flex flex-col justify-between transition-colors">
+            <span class="absolute -top-2.5 right-2 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Most Popular</span>
+            <input type="radio" name="bundle_tier" value="2" class="sr-only" />
+            <div>
+              <span class="block font-bold text-sm text-on-surface">2 Bottles</span>
+              <span class="block text-xs text-secondary">60-Day Full Cycle</span>
+            </div>
+            <div class="mt-2 font-bold text-primary text-base">$39.00 <span class="text-xs line-through text-secondary font-normal">$48</span></div>
+          </label>
+          <label class="border border-secondary-container hover:border-primary p-4 rounded cursor-pointer relative flex flex-col justify-between transition-colors">
+            <span class="absolute -top-2.5 right-2 bg-primary-container text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Best Value</span>
+            <input type="radio" name="bundle_tier" value="3" class="sr-only" />
+            <div>
+              <span class="block font-bold text-sm text-on-surface">3 Bottles</span>
+              <span class="block text-xs text-secondary">90-Day Clinical Max</span>
+            </div>
+            <div class="mt-2 font-bold text-primary text-base">$49.00 <span class="text-xs line-through text-secondary font-normal">$72</span></div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="space-y-3 pt-2">
+        <button type="button" onclick="handleAddToCartClick(this)"
+                class="w-full bg-primary-container hover:bg-primary text-white py-4 font-button text-button uppercase tracking-wider transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.99] flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">shopping_bag</span>
+          <span>Add To Cart &bull; Free Shipping</span>
+        </button>
+        <button type="button" onclick="handleBuyNowClick(this)"
+                class="w-full bg-on-surface hover:bg-black text-white py-4 font-button text-button uppercase tracking-wider transition-all duration-200 shadow-sm active:scale-[0.99] flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">flash_on</span>
+          <span>Instant Checkout</span>
+        </button>
+      </div>
+
+      <!-- Trust Assurance Icons -->
+      <div class="grid grid-cols-3 gap-2 pt-4 border-t border-secondary-container text-center">
+        <div class="flex flex-col items-center">
+          <span class="material-symbols-outlined text-primary text-2xl">local_shipping</span>
+          <span class="text-[11px] font-semibold text-on-surface mt-1">Free Express Delivery</span>
+          <span class="text-[10px] text-secondary">2-4 Business Days</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="material-symbols-outlined text-primary text-2xl">published_with_changes</span>
+          <span class="text-[11px] font-semibold text-on-surface mt-1">30-Day Guarantee</span>
+          <span class="text-[10px] text-secondary">100% Lash Growth or Refund</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="material-symbols-outlined text-primary text-2xl">security</span>
+          <span class="text-[11px] font-semibold text-on-surface mt-1">SSL Encrypted</span>
+          <span class="text-[10px] text-secondary">Safe & Secure Payment</span>
+        </div>
+      </div>
+
+      <!-- Collapsible Spec Information -->
+      <div class="space-y-2 pt-2">
+        <details class="group border border-secondary-container rounded p-4 bg-surface-container-lowest">
+          <summary class="flex justify-between items-center cursor-pointer font-button text-xs uppercase tracking-wider text-on-surface select-none">
+            <span>Clinical Key Ingredients</span>
+            <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-secondary">expand_more</span>
+          </summary>
+          <div class="pt-3 text-xs text-secondary leading-relaxed space-y-1">
+            <p><strong>Myristoyl Pentapeptide-17:</strong> Stimulates keratin gene production for increased length.</p>
+            <p><strong>Biotinoyl Tripeptide-1:</strong> Strengthens follicle anchoring to reduce fallout.</p>
+            <p><strong>Hydrolyzed Silk Protein:</strong> Restores moisture balance and coats lash fibers with natural luster.</p>
+          </div>
+        </details>
+
+        <details class="group border border-secondary-container rounded p-4 bg-surface-container-lowest">
+          <summary class="flex justify-between items-center cursor-pointer font-button text-xs uppercase tracking-wider text-on-surface select-none">
+            <span>How To Apply (Doctor Protocol)</span>
+            <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-secondary">expand_more</span>
+          </summary>
+          <div class="pt-3 text-xs text-secondary leading-relaxed">
+            Apply once daily along the upper lash root like a liquid eyeliner on cleansed skin before bedtime. Allow 2 minutes to fully absorb before applying eye creams or sleeping.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main Product",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Show quantity selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_guarantee_badge",
+      "label": "Show guarantee badge",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

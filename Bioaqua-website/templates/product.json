@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main_product": {
+      "type": "main-product",
+      "settings": {
+        "show_quantity_selector": true,
+        "show_guarantee_badge": true
+      }
+    },
+    "stock_urgency": {
+      "type": "stock-urgency",
+      "settings": {
+        "initial_stock": 14,
+        "sold_percentage": 92
+      }
+    },
+    "micro_precision": {
+      "type": "micro-precision",
+      "settings": {
+        "title": "Micro-Precision Application",
+        "description": "The BIOAQUA applicator features a 0.1mm micro-fine brush head, engineered for surgical precision at the lash root. Unlike generic felt tips, our synthetic fibers ensure zero-waste delivery of active nutrients directly to the hair follicles."
+      }
+    },
+    "science_growth": {
+      "type": "science-growth",
+      "settings": {
+        "badge": "The Bio-Active Formula",
+        "headline": "The Molecular Science of Growth.",
+        "stat_1_value": "98%",
+        "stat_1_label": "Reported Length",
+        "stat_2_value": "14 Days",
+        "stat_2_label": "Visible Results"
+      }
+    },
+    "comparison_table": {
+      "type": "comparison-table",
+      "settings": {
+        "section_title": "Clinical Efficacy Benchmark"
+      }
+    },
+    "clinical_reviews": {
+      "type": "clinical-reviews",
+      "settings": {
+        "title": "Verified Clinical Experiences",
+        "quote": "I've tried every serum on the market, but nothing compares to the precision of the BIOAQUA brush. My lashes feel stronger and noticeably darker within two weeks.",
+        "author": "Dr. Elena Sterling, Dermatologist"
+      }
+    },
+    "benefit_badges": {
+      "type": "benefit-badges",
+      "settings": {}
+    },
+    "faq_accordion": {
+      "type": "faq-accordion",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    }
+  },
+  "order": [
+    "main_product",
+    "stock_urgency",
+    "micro_precision",
+    "science_growth",
+    "comparison_table",
+    "clinical_reviews",
+    "benefit_badges",
+    "faq_accordion"
+  ]
+}

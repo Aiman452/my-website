@@ -1,0 +1,54 @@
+<!-- 4. Feature Section: Precision Brush -->
+<section id="benefits" class="py-stack-lg px-margin-desktop max-w-container-max mx-auto">
+  <div class="grid md:grid-cols-2 gap-gutter items-center">
+    <div class="order-2 md:order-1">
+      <h2 class="font-headline-md text-headline-md mb-6">
+        {{ section.settings.title | default: 'Micro-Precision Application' }}
+      </h2>
+      <p class="font-body-md text-body-md text-secondary mb-8">
+        {{ section.settings.description | default: 'The BIOAQUA applicator features a 0.1mm micro-fine brush head, engineered for surgical precision at the lash root. Unlike generic felt tips, our synthetic fibers ensure zero-waste delivery of active nutrients directly to the hair follicles.' }}
+      </p>
+      <ul class="space-y-4" style="list-style: none;">
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary">target</span>
+          <span class="font-body-md text-body-md">Root-to-tip saturation</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary">sanitizer</span>
+          <span class="font-body-md text-body-md">Anti-clumping technology</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-primary">check_circle</span>
+          <span class="font-body-md text-body-md">Zero-irritation design</span>
+        </li>
+      </ul>
+    </div>
+    <div class="order-1 md:order-2">
+      <div class="aspect-square relative overflow-hidden bg-surface-container-high rounded-lg shadow-sm" style="border-radius: 4px;">
+        <img class="w-full h-full object-cover" 
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3yVHj0ORWA877TsVEWDjsEagDcFenTXgAscQfw-jeUaKKHIdTHaigAx39pNzRr7Btu06VOBc9Be5BVpPAeqAmRf37QkWwFLRDwbYLdLXxJlx1hbf4V-N1sKqnF-caKA4iZAHicOkfvyJ0CTx-MagQZ8oD97Rzplyo9wMjfdIIyxBB1lJE1UbC2pfNxZJc_IszrXqtBkMDUPoU-0jkcjZAlrOkpsajoLQRmFRKZ2ceFGsQ2RvntdgH7ntv-tJQsDsgPdanrrxcchE" 
+             alt="{{ section.settings.title | default: 'Micro-Precision Brush Tip' }}" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Micro Precision",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Micro-Precision Application"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "The BIOAQUA applicator features a 0.1mm micro-fine brush head, engineered for surgical precision at the lash root. Unlike generic felt tips, our synthetic fibers ensure zero-waste delivery of active nutrients directly to the hair follicles."
+    }
+  ]
+}
+{% endschema %}

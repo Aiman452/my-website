@@ -1,0 +1,75 @@
+<!-- 5. Text Feature Section: The Science -->
+<section class="bg-surface-container-low py-32" style="background-color: var(--surface-container-low); padding-top: 128px; padding-bottom: 128px;">
+  <div class="max-w-3xl mx-auto px-margin-mobile text-center" style="max-width: 768px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; text-align: center;">
+    <span class="font-label-sm text-label-sm text-primary uppercase mb-4 block font-semibold">
+      {{ section.settings.badge | default: 'The Bio-Active Formula' }}
+    </span>
+    <h2 class="font-display-lg text-display-lg-mobile text-on-surface mb-8">
+      {{ section.settings.title | default: 'The Molecular Science of Growth.' }}
+    </h2>
+    <p class="font-body-lg text-body-lg text-secondary leading-relaxed" style="line-height: 1.7;">
+      {{ section.settings.description | default: 'Our proprietary Nourishing Liquid utilizes a triple-peptide complex that accelerates the anagen phase of the hair growth cycle. Infused with botanical nutrients and pharmaceutical-grade biotin, it creates a protective barrier while stimulating dormant follicles for 3x more density.' }}
+    </p>
+    <div class="mt-12 flex justify-center gap-8 border-t border-secondary-container pt-8" style="margin-top: 48px; display: flex; justify-content: center; gap: 32px; border-top: 1px solid var(--secondary-container); padding-top: 32px;">
+      <div>
+        <div class="font-headline-md text-headline-md text-primary">{{ section.settings.stat1_val | default: '98%' }}</div>
+        <div class="font-label-sm text-label-sm text-secondary uppercase">{{ section.settings.stat1_label | default: 'Reported Length' }}</div>
+      </div>
+      <div class="border-l border-secondary-container h-12" style="border-left: 1px solid var(--secondary-container); height: 48px;"></div>
+      <div>
+        <div class="font-headline-md text-headline-md text-primary">{{ section.settings.stat2_val | default: '14 Days' }}</div>
+        <div class="font-label-sm text-label-sm text-secondary uppercase">{{ section.settings.stat2_label | default: 'Visible Results' }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Science of Growth",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge",
+      "default": "The Bio-Active Formula"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "The Molecular Science of Growth."
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Our proprietary Nourishing Liquid utilizes a triple-peptide complex that accelerates the anagen phase of the hair growth cycle. Infused with botanical nutrients and pharmaceutical-grade biotin, it creates a protective barrier while stimulating dormant follicles for 3x more density."
+    },
+    {
+      "type": "text",
+      "id": "stat1_val",
+      "label": "Stat 1 Value",
+      "default": "98%"
+    },
+    {
+      "type": "text",
+      "id": "stat1_label",
+      "label": "Stat 1 Label",
+      "default": "Reported Length"
+    },
+    {
+      "type": "text",
+      "id": "stat2_val",
+      "label": "Stat 2 Value",
+      "default": "14 Days"
+    },
+    {
+      "type": "text",
+      "id": "stat2_label",
+      "label": "Stat 2 Label",
+      "default": "Visible Results"
+    }
+  ]
+}
+{% endschema %}

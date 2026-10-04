@@ -1,0 +1,42 @@
+<!-- 9. Animated Stock Progress Bar -->
+<section class="py-12 bg-surface-container-high" style="background-color: var(--surface-container-high); padding-top: 48px; padding-bottom: 48px;">
+  <div class="max-w-xl mx-auto px-margin-mobile text-center" style="max-width: 576px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; text-align: center;">
+    <div class="flex justify-between items-end mb-3" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 12px;">
+      <span class="font-button text-button text-error uppercase animate-pulse-subtle flex items-center gap-2" style="color: var(--error); display: flex; align-items: center; gap: 8px;">
+        <span class="material-symbols-outlined text-sm" style="font-size: 16px;">error</span>
+        Low Stock: Only {{ section.settings.remaining_stock | default: 14 }} items remaining!
+      </span>
+      <span class="font-label-sm text-label-sm text-secondary">
+        {{ section.settings.sold_percent | default: '92%' }} Sold Out
+      </span>
+    </div>
+    <div class="w-full h-3 bg-surface-variant rounded-full overflow-hidden" style="width: 100%; height: 12px; background-color: var(--surface-variant); border-radius: 9999px; overflow: hidden;">
+      <div class="h-full bg-primary-container animate-[pulse_2s_ease-in-out_infinite]" style="width: {{ section.settings.sold_percent | default: '92%' }}; height: 100%; background-color: var(--primary-container); animation: pulse 2s ease-in-out infinite;"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stock Urgency",
+  "settings": [
+    {
+      "type": "number",
+      "id": "remaining_stock",
+      "label": "Remaining Items",
+      "default": 14
+    },
+    {
+      "type": "text",
+      "id": "sold_percent",
+      "label": "Sold Percentage",
+      "default": "92%"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stock Urgency"
+    }
+  ]
+}
+{% endschema %}
